@@ -113,3 +113,7 @@ footer p{margin-bottom:8px}
   .kpi{padding:20px 16px 20px 0;border-right:none;border-bottom:1px solid var(--rule)}
   .kpi:last-child{border-bottom:none}
 }
+
+/* CV download button — primary CTA */
+.hero__cta--primary{background:var(--gold,#c9a961);color:#001e3c !important;padding:8px 16px;border-radius:4px;font-weight:600;border:1px solid var(--gold,#c9a961);transition:all .15s}
+.hero__cta--primary:hover{background:#dfbb74;border-color:#dfbb74}
