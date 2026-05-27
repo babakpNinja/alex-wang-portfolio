@@ -117,3 +117,19 @@ footer p{margin-bottom:8px}
 /* CV download button — primary CTA */
 .hero__cta--primary{background:var(--gold,#c9a961);color:#001e3c !important;padding:8px 16px;border-radius:4px;font-weight:600;border:1px solid var(--gold,#c9a961);transition:all .15s}
 .hero__cta--primary:hover{background:#dfbb74;border-color:#dfbb74}
+
+/* Sticky top action bar with CV download */
+.topbar{position:fixed;top:0;left:0;right:0;background:#fbfbf8;border-bottom:1px solid #e8e0c8;z-index:1000;box-shadow:0 1px 8px rgba(0,30,60,.06);height:54px}
+.topbar__inner{max-width:1100px;margin:0 auto;padding:0 24px;height:100%;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.topbar__name{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:1.05rem;color:#001e3c;letter-spacing:-0.005em}
+.topbar__cta{display:inline-flex;align-items:center;gap:9px;background:#c9a961;color:#001e3c;padding:9px 16px;border-radius:5px;font-weight:600;font-size:0.92rem;text-decoration:none;border:1px solid #b0904a;transition:all .15s;box-shadow:0 1px 4px rgba(0,30,60,.08)}
+.topbar__cta:hover{background:#dfbb74;border-color:#c9a961;box-shadow:0 2px 8px rgba(0,30,60,.14);transform:translateY(-1px)}
+.topbar__icon{display:block;flex-shrink:0}
+body{padding-top:54px}
+@media(max-width:640px){
+  .topbar{height:48px}
+  .topbar__inner{padding:0 14px;gap:10px}
+  .topbar__cta{padding:7px 12px;font-size:0.85rem}
+  .topbar__name{font-size:0.95rem}
+  body{padding-top:48px}
+}
